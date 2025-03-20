@@ -1,0 +1,255 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #00ffaa; /* Verde */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* Amarillo */
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: linear-gradient(to bottom, #c300ff, #009eb3); /* Degradado */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+}
+
+/* Botón principal */
+.btn-primary {
+    background-color: #ffd700; /* Amarillo */
+    color: black;
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background: #ffc107; /* Amarillo más oscuro */
+    transform: translateY(-3px);
+}
+
+/* Sección de tarjetas */
+.cards-container {
+    padding: 3rem;
+    background: #f9f9f9;
+}
+
+.cards-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    color: black;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Espaciado general para los títulos principales */
+h1, h2 {
+    margin-top: 2rem; /* Espacio superior */
+    margin-bottom: 2rem; /* Espacio inferior */
+    text-align: center; /* Centrar los títulos */
+}
+
+/* Espaciado adicional entre secciones */
+.container {
+    margin-bottom: 3rem; /* Espacio inferior entre las secciones */
+}
+
+/* Espaciado para la sección "Acerca de Tareas Fáciles" */
+.about-section {
+    padding: 3rem 1rem;
+    background-color: #f9f9f9; /* Fondo claro para diferenciar la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 3rem; /* Espacio inferior */
+}
+
+/* Alinear el título "Acerca de Tareas Fáciles" a la izquierda */
+.about-section h2 {
+    margin-bottom: 1.5rem; /* Espacio inferior del título */
+    text-align: left; /* Alinear a la izquierda */
+    font-size: 2rem; /* Tamaño de fuente ajustado */
+    font-weight: bold; /* Negrita */
+}
+
+.about-section p {
+    line-height: 1.8; /* Espaciado entre líneas del texto */
+    text-align: justify; /* Justificar el texto */
+}
+
+/* Sección de contacto */
+#contacto {
+    padding: 3rem 1rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#contacto p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+#contacto ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contacto ul li {
+    margin-bottom: 0.5rem;
+}
+
+#contacto .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#contacto .social-media li {
+    display: inline;
+}
+
+#contacto .social-media a {
+    text-decoration: none;
+    color: #006eff;
+    font-weight: bold;
+}
+
+#contacto .social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #f7b9ee;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
